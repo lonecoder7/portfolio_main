@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects & Architecture | Sreesankar K</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .projects-header {
+            padding: 120px 5% 50px;
+            text-align: center;
+        }
+
+        .projects-header h1 {
+            font-size: 3rem;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+
+        .github-dashboard {
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .stat-box h4 {
+            color: var(--text-muted);
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-box span {
+            font-size: 2rem;
+            color: #4fc3dc;
+            font-weight: 700;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 0 5% 5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Updated Project Card for Images */
+        .project-card {
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease;
+            overflow: hidden;
+            padding: 0;
+        }
+
+        .project-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid var(--glass-border);
+            background: #1a1a1a;
+        }
+
+        .project-content {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(79, 195, 220, 0.4);
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+
+        .project-desc {
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .tech {
+            font-size: 0.8rem;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 0.2rem 0.8rem;
+            border-radius: 12px;
+            color: #a0a0a5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="particles-js"></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <nav>
+        <a href="index.html" class="logo" style="text-decoration: none;"><strong>SK</strong></a>
+
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="research.html">Research</a>
+            <a href="projects.html">Projects</a>
+            <a href="cv_sreesankar2.pdf" class="btn-primary" download>Download CV</a>
+        </div>
+    </nav>
+
+    <header class="projects-header">
+        <h1>Systems & Software</h1>
+        <p style="color: var(--text-muted);">Production-ready applications and machine learning implementations.</p>
+    </header>
+
+    <div class="github-dashboard glass-panel">
+        <div class="stat-box">
+            <h4>GitHub Profile</h4>
+            <span style="font-size: 1.2rem; color: #fff;">@lonecoder7</span>
+        </div>
+        <div class="stat-box">
+            <h4>Public Repositories</h4>
+            <span id="gh-repos">--</span>
+        </div>
+        <div class="stat-box">
+            <h4>Followers</h4>
+            <span id="gh-followers">--</span>
+        </div>
+    </div>
+
+    <section class="projects-grid">
+
+        <div class="project-card glass-panel">
+            <img src="icon1.png" alt="SenseBridge Architecture" class="project-image"
+                onerror="this.src='https://via.placeholder.com/400x200/1a1a1a/4fc3dc?text=SenseBridge+Architecture'">
+            <div class="project-content">
+                <h2 class="project-title">SenseBridge AI</h2>
+                <div class="tech-stack">
+                    <span class="tech">Python</span><span class="tech">ResNet50</span><span class="tech">CRNN</span>
+                </div>
+                <p class="project-desc">A multimodal assistive document reader research project. Implements a custom
+                    text-to-Braille mapping logic to ensure high accuracy for complex handwriting variations.</p>
+                <a href="https://github.com/lonecoder7" target="_blank" class="btn-primary"
+                    style="text-align: center;">View Code</a>
+            </div>
+        </div>
+
+        <div class="project-card glass-panel">
+            <img src="icon2.png" alt="Ask Dr Rakna Interface" class="project-image"
+                onerror="this.src='https://via.placeholder.com/400x200/1a1a1a/4fc3dc?text=Ask+Dr.+Rakna+Interface'">
+            <div class="project-content">
+                <h2 class="project-title">Ask_Dr.Rakna_AI</h2>
+                <div class="tech-stack">
+                    <span class="tech">Python</span><span class="tech">Streamlit</span><span class="tech">Llama
+                        AI</span>
+                </div>
+                <p class="project-desc">An AI-powered healthcare chatbot utilizing natural language processing to
+                    deliver interactive medical assistance via both voice and text interfaces.</p>
+                <a href="https://github.com/lonecoder7/Ask_Rakna_AI" target="_blank" class="btn-primary"
+                    style="text-align: center;">View Code</a>
+            </div>
+        </div>
+
+        <div class="project-card glass-panel">
+            <img src="icon3.png" alt="Gold Wings Academy Website" class="project-image"
+                onerror="this.src='https://via.placeholder.com/400x200/1a1a1a/4fc3dc?text=Gold+Wings+Website'">
+            <div class="project-content">
+                <h2 class="project-title">Gold Wings Academy</h2>
+                <div class="tech-stack">
+                    <span class="tech">PHP</span><span class="tech">JavaScript</span><span class="tech">MySQL</span>
+                </div>
+                <p class="project-desc">A dynamic, production-ready institutional website facilitating German language
+                    course enrollments and visa consultancy services.</p>
+                <a href="https://goldwingsacademy.com/" target="_blank" class="btn-primary"
+                    style="text-align: center;">Live Site</a>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => { fetchGitHubStats('lonecoder7'); });
+    </script>
+
+    <div class="chat-widget">
+        <button class="chat-toggle-btn" id="chatToggle">
+            <i class="fas fa-robot"></i>
+        </button>
+
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <h3><i class="fas fa-sparkles"></i> Ask AI about Sreesankar</h3>
+                <i class="fas fa-times" id="chatClose" style="cursor: none; color: var(--text-muted);"></i>
+            </div>
+            <div class="chat-body" id="chatBody">
+                <div class="chat-msg msg-ai">Hello! I'm Sreesankar's AI assistant. Ask me about his projects, IEEE
+                    research, or experience!</div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chatInput" placeholder="Type a question...">
+                <button id="chatSend"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

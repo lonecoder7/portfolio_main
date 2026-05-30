@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research & Publications | Sreesankar K</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .research-header {
+            padding: 120px 5% 50px;
+            text-align: center;
+        }
+
+        .research-header h1 {
+            font-size: 3rem;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+
+        .paper-container {
+            max-width: 900px;
+            margin: 0 auto 5rem;
+        }
+
+        .paper-title {
+            color: #4fc3dc;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        /* New Research Metrics Grid */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 3px solid #4fc3dc;
+        }
+
+        .metric-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .metric-value {
+            font-size: 1.1rem;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .abstract {
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .architecture-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .arch-box {
+            background: rgba(255, 255, 255, 0.02);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border-left: 3px solid #4fc3dc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="particles-js"></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <nav>
+        <a href="index.html" class="logo" style="text-decoration: none;"><strong>SK</strong></a>
+
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="research.html">Research</a>
+            <a href="projects.html">Projects</a>
+            <a href="./assets/cv_sreesankar2.pdf" class="btn-primary" download>Download CV</a>
+        </div>
+    </nav>
+    <header class="research-header">
+        <h1>Academic Research</h1>
+        <p style="color: var(--text-muted);">Peer-reviewed publications and independent AI implementations.</p>
+    </header>
+
+    <section class="paper-container glass-panel">
+        <h2 class="paper-title">Handwritten Document Accessibility: A Comparative Analysis of ResNet50 and Optimized
+            Bi-GRU CRNN</h2>
+
+        <div class="metrics-grid">
+            <div>
+                <div class="metric-label">Publication Type</div>
+                <div class="metric-value">IEEE Conference</div>
+            </div>
+            <div>
+                <div class="metric-label">Research Area</div>
+                <div class="metric-value">Computer Vision</div>
+            </div>
+            <div>
+                <div class="metric-label">Models Used</div>
+                <div class="metric-value">ResNet50 + Bi-GRU CRNN</div>
+            </div>
+            <div>
+                <div class="metric-label">Application Domain</div>
+                <div class="metric-value">Accessibility Tech</div>
+            </div>
+            <div>
+                <div class="metric-label">Status</div>
+                <div class="metric-value">DOI Indexed</div>
+            </div>
+        </div>
+
+        <p style="margin-bottom: 1rem; color: #fff;"><strong>DOI:</strong> <a
+                href="https://doi.org/10.23919/INDIACom70271.2026.11526293"
+                style="color: #4fc3dc; text-decoration: none;" target="_blank">10.23919/INDIACom70271.2026.11526293</a>
+        </p>
+
+        <div class="abstract">
+            <h3>Abstract / Overview</h3>
+            <p>This research evaluates the efficacy of advanced neural network architectures in processing and
+                interpreting handwritten documents for accessibility purposes. By conducting a comparative analysis
+                between ResNet50 and an Optimized Bi-GRU Convolutional Recurrent Neural Network (CRNN), the paper
+                establishes a framework for highly accurate optical character recognition tailored to complex
+                handwriting variations.</p>
+        </div>
+
+        <div class="architecture-grid">
+            <div class="arch-box">
+                <h3 style="margin-bottom: 0.5rem;">Visual Feature Extraction</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">Utilizing deep convolutional layers to isolate
+                    spatial features from unstructured handwritten input, providing robust baseline data for sequential
+                    analysis.</p>
+            </div>
+            <div class="arch-box">
+                <h3 style="margin-bottom: 0.5rem;">Native Translation Engine</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">Implementation of a custom text-to-Braille
+                    mapping system, engineered entirely from scratch without reliance on external translation APIs or
+                    third-party libraries.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="app.js"></script>
+
+    <div class="chat-widget">
+        <button class="chat-toggle-btn" id="chatToggle">
+            <i class="fas fa-robot"></i>
+        </button>
+
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <h3><i class="fas fa-sparkles"></i> Ask AI about Sreesankar</h3>
+                <i class="fas fa-times" id="chatClose" style="cursor: none; color: var(--text-muted);"></i>
+            </div>
+            <div class="chat-body" id="chatBody">
+                <div class="chat-msg msg-ai">Hello! I'm Sreesankar's AI assistant. Ask me about his projects, IEEE
+                    research, or experience!</div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chatInput" placeholder="Type a question...">
+                <button id="chatSend"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
